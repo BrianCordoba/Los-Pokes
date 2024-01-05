@@ -8,7 +8,7 @@ export default function Nav () {
     <div id="divNav">  
         <div >
             <img src={Logo} className="img"/>
-            <span className="ltrSpam">Poke APP</span>
+            <span className="ltrSpam">Poke APi</span>
         </div>
 
         <div >
