@@ -22,9 +22,7 @@ import Grass from "../../assets/Iconos/Grass.webp";
 import Bug from "../../assets/Iconos/Bug.webp";
 import Evolucion from "../Evolucion.jsx";
 import { PokeContext } from "../../context/PokeContext.jsx";
-import Nav from "../Nav/Nav.jsx";
 import LoginBusqueda from "../LoguinBusqueda/LoginBusqueda.jsx";
-import LogoPepe from "../../assets/Iconos/imgPepelogo.jpeg";
 
 export default function PokeCard() {
   const { state, dispatcher } = useContext(PokeContext);
@@ -106,17 +104,8 @@ export default function PokeCard() {
       <div className="div-container">
         <div className="img-boton">
           <article className="pad-poke">
-            {data.species.name === "machamp" ? (
-              <>
-                <img src={LogoPepe} />
-                <img src={LogoPepe} />
-              </>
-            ) : (
-              <>
-                <img src={shinySi ? imgShiny : imagenFrente}></img>
-                <img src={shinySi ? hoverShiny : imagenAtras}></img>
-              </>
-            )}
+            <img src={shinySi ? imgShiny : imagenFrente}></img>
+            <img src={shinySi ? hoverShiny : imagenAtras}></img>
           </article>
           <button className="nes-btn is-warning" onClick={cambiarSh}>
             {!shinySi ? "Shiny" : "Normal"}
