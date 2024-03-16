@@ -6,9 +6,9 @@
   text-transform: capitalize;
 }
 
-.nes-progress.is-perfect::-webkit-progress-bar {
+/* .nes-progress.is-perfect::-webkit-progress-bar {
   background-color: #fff;
-}
+} */
 
 .nes-progress.is-perfect::-webkit-progress-value {
   background-color: #9210ca;
