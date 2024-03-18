@@ -8,7 +8,7 @@ export const pokeApi = async (pokeText) => {
     })
     .catch((error) => {
         console.warn(error)
-        alert("escribi bien conchetumare")
+        alert("Pokemon no encontrado")
         throw error
     })
 
